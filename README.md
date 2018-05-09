@@ -4,7 +4,7 @@ Shell repo for B1 exercise
 On GitHub
 `fork`
 
-In Terminal 
+In Terminal
 
 ```bash
 git clone <your forked repo>
@@ -22,14 +22,14 @@ Using this [repo](https://github.com/turingschool-examples/morse_translator), bu
 3. Push your solution to your fork
 4. Use Github's interface to create a pull request
 
-### Iteration 0 
+### Iteration 0
 Translate English to Morse Code    
 * lowercase letters
 
-```ruby 
-  $ translator = Translate.new 
+```ruby
+  $ translator = Translate.new
   => #<Translate:0x007fa1ab98cac0>
-  $ translator.eng_to_morse("hello world") 
+  $ translator.eng_to_morse("hello world")
   => "......-...-..--- .-----.-..-..-.."
 ```
 
@@ -37,12 +37,12 @@ Translate English to Morse Code
 Translate English to Morse Code  
 * case insensitive, with numbers  
 
-```ruby 
-  $ translator = Translate.new 
+```ruby
+  $ translator = Translate.new
   => #<Translate:0x007fa1ab98cac0>
-  $ translator.eng_to_morse("Hello World") 
+  $ translator.eng_to_morse("Hello World")
   => "......-...-..--- .-----.-..-..-.."
-  $ translator.eng_to_morse("There are 3 ships") 
+  $ translator.eng_to_morse("There are 3 ships")
   => "-......-.. .-.-.. ...-- ..........--...."
 ```
 
@@ -56,18 +56,18 @@ I am in a file
 ```
 
 ```ruby 
-  $ translator = Translate.new 
+  $ translator = Translate.new
   => #<Translate:0x007fa1ab98cac0>
   $translator.from_file("input.txt")
   => ".. .--- ..-. .- ..-....-..."
 ```
 
-### Iteration 3 
+### Iteration 3
 Translate Morse Code to English  
 
-```ruby 
-  $ translator = Translate.new 
+```ruby
+  $ translator = Translate.new
   => #<Translate:0x007fa1ab98cac0>
-  $ translator.morse_to_eng(".... . .-.. .-.. ---  .-- --- .-. .-.. -..") 
+  $ translator.morse_to_eng(".... . .-.. .-.. ---  .-- --- .-. .-.. -..")
   => "hello world"
 ```
