@@ -1,4 +1,7 @@
 class Translator
+  attr_reader :dictionary,
+              :num_dictionary,
+              :morse
 
   def initialize
     @dictionary = {"a" => ".-",
@@ -38,5 +41,29 @@ class Translator
                     "9" => "----.",
                     "0" => "-----",
                     " " => " "}
+
+    @num_dictionary = {"0" => "-----",
+                        "1" => ".----",
+                        "2" => "..---",
+                        "3" => "...--",
+                        "4" => "....-",
+                        "5" => ".....",
+                        "6" => "-....",
+                        "7" => "--...",
+                        "8" => "---..",
+                        "9" => "----."}
+
+    create_morse_dictionary
   end
+
+  def create_morse_dictionary
+    @morse = {}
+    @dictionary.each do |key, value|
+      @morse[value] = key
+    end
+    @num_dictionary.each do |key, value|
+      @morse[value] = key
+    end
+  end
+
 end
